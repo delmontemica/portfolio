@@ -1,0 +1,59 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+$body-font-family: 'Roboto', sans-serif;
+$quicksand-font: 'Quicksand', sans-serif;
+
+$font-weight-lightest: 100;
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$font-weight-boldest: 900;
+
+/* NAVIGATION FOR HOME PAGE */
+
+.home-nav {
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff !important;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    width: 200px;
+    font-weight: lighter;
+    font-family: $body-font-family;
+  }
+  a:hover {
+    background: #ccc;
+    color: #000 !important;
+    opacity: 0.3;
+    transition: all .5s ease-in;
+  }
+}
+
+/* SIDEBAR DRAWER */
+
+.sidebar{
+  &-title{
+    text-align: center;
+    font-family: $quicksand-font;
+    font-weight: $font-weight-light;
+    font-size: 20px !important;
+  }
+  &-subtitle{
+    text-align: center;
+    font-family: $quicksand-font;
+    font-size: 10px !important;
+  }
+  &-links{
+    text-align: center;
+    font-size: 15px !important;
+    font-family: $body-font-family;
+    font-weight: $font-weight-lighter !important;
+  }
+}
