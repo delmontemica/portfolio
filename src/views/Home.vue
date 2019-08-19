@@ -1,28 +1,24 @@
 <template>
-  <v-container style="height: 60%">
-  	<Navigation />
-	  <v-layout 
-	  	align-center 
-	  	justify-center 
-	  	row 
-	  	fill-height
-	  >
-			<v-flex>
-				<v-img src='../assets/LOGO.png'
-			  	width="300"
-			  	style="margin: auto"
-			  ></v-img>
-			</v-flex>
-	  </v-layout>
-  </v-container>
+  <v-content>
+	  <Main />
+		<About />
+		<Works />
+  </v-content>
 </template>
 
 <script>
-import Navigation from '../components/layout/Navigation';
+import Main from "../components/Main";
+import About from "../components/About";
+import Works from "../components/Works";
 
 export default {
 	components: {
-		Navigation
+		Main,
+		About,
+		Works,
 	},
+	data: () => ({
+    
+  }),
 };
 </script>

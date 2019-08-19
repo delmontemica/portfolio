@@ -16,24 +16,11 @@ $font-weight-boldest: 900;
 /* NAVIGATION FOR HOME PAGE */
 
 .home-nav {
-  a{
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fff !important;
-    height: 60px;
-    display: inline-block;
-    line-height: 60px;
-    width: 200px;
-    font-weight: lighter;
-    font-family: $body-font-family;
-  }
-  a:hover {
-    background: #ccc;
-    color: #000 !important;
-    opacity: 0.3;
-    transition: all .5s ease-in;
-  }
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: lighter;
+  font-family: $body-font-family;
 }
 
 /* SIDEBAR DRAWER */
@@ -55,5 +42,15 @@ $font-weight-boldest: 900;
     font-size: 15px !important;
     font-family: $body-font-family;
     font-weight: $font-weight-lighter !important;
+  }
+}
+
+/* ABOUT */
+
+.image {
+  &-text{
+    width: 100%;
+    height: 15px;
+    background: yellow;
   }
 }

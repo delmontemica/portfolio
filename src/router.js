@@ -1,14 +1,23 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home';
-import About from './views/About';
-import Works from './views/Works';
-import Contact from './views/Contact';
+import goTo from 'vuetify/es5/services/goto'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  scrollBehavior: (to, from, savedPosition) => {
+    let scrollTo = 0
+
+    if (to.hash) {
+      scrollTo = to.hash
+    } else if (savedPosition) {
+      scrollTo = savedPosition.y
+    }
+
+    return goTo(scrollTo)
+  },
   routes: [
     {
       path: '/',
@@ -16,30 +25,6 @@ export default new Router({
       component: Home,
       meta: {
         title: 'Home'
-      }
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About,
-      meta: {
-        title: 'About'
-      }
-    },
-    {
-      path: '/works',
-      name: 'works',
-      component: Works,
-      meta: {
-        title: 'Works'
-      }
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
-      meta: {
-        title: 'Contact'
       }
     },
   ]
