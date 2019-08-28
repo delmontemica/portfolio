@@ -1,10 +1,10 @@
 <template>
-  <v-container style="height: 100vh">
 	  <v-layout 
 	  	align-center 
 	  	justify-center 
 	  	row 
 	  	fill-height
+			style="height: 100vh; width: 100%"
 	  >
 			<v-flex xs12>
 				<div class="text-center">
@@ -36,7 +36,6 @@
 				</div>
 			</v-flex>
 	  </v-layout>
-  </v-container>
 </template>
 
 <script>
@@ -45,8 +44,9 @@ export default {
 	data: () => ({
 		result: '',
     links: [
-      { name: 'About', href: '#'},
-      { name: 'Works', href: '#'},
+      { name: 'About', href: '#about'},
+			{ name: 'Skills', href: '#skills'},
+			{ name: 'Works', href: '#works'},
 		],
 		networks: [
 			{ name: 'Facebook', icon: 'mdi-facebook', link: 'https://www.facebook.com/eladelmonte' },
