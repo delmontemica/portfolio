@@ -4,6 +4,14 @@
 		<About />
 		<Skills />
 		<Works />
+		<v-footer padless>
+			<v-col
+				class="text-center"
+				cols="12"
+			>
+				<span class="overline">&copy; {{ new Date().getFullYear() }} ― Micaela Delmonte</span>
+			</v-col>
+		</v-footer>
   </v-content>
 </template>
 

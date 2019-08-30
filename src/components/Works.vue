@@ -1,46 +1,56 @@
 <template>
   <v-container id="works" style="min-height: 100vh;">
-    <div class="mt-5" style="text-align: center">
+    <div class="mt-5" style="text-align: center"
+      data-aos="zoom-in">
       <span class="skills-title">Works</span>
     </div>
-    <v-layout 
-      row
-      pt-10
-    >
-      <v-flex 
+    <v-layout row>
+      <v-flex
         xs12
         sm12
-        md6
-        lg4
-        xl4
-        pa-5
-        v-for="(i, index) in works"
-        :key="index"
-      >
-        <v-hover
-          v-slot:default="{ hover }">
-          <v-card
-            :elevation="hover ? 12 : 2"
-            class="mx-auto"
-            @click="openDialog(i)"
+        md8 offset-md2
+        lg8 offset-lg2>
+        <v-layout 
+          row
+          pt-10
+        >
+          <v-flex 
+            xs12
+            sm12
+            md6
+            lg4
+            xl4
+            pa-5
+            v-for="(i, index) in works"
+            :key="index"
+            data-aos="zoom-out-right"
           >
-            <v-img
-              :src="i.image"
-              height="200px"
-            >
-              <v-expand-transition>
-                <div
-                  v-if="hover"
-                  class="d-flex transition-fast-in-fast-out red darken-4 v-card--reveal display-3 white--text"
-                  style="height: 100%; padding: 10px; text-align: center"
+            <v-hover
+              v-slot:default="{ hover }">
+              <v-card
+                :elevation="hover ? 12 : 2"
+                class="mx-auto"
+                @click="openDialog(i)"
+              >
+                <v-img
+                  :src="i.image"
+                  height="300px"
                 >
-                  <span class="overline">{{i.title}} ⁠— {{i.subtitle}}</span>
-                </div>
-              </v-expand-transition>
-            </v-img>
-            
-          </v-card>
-        </v-hover>
+                  <v-expand-transition>
+                    <div
+                      v-if="hover"
+                      class="d-flex transition-fast-in-fast-out red darken-4 v-card--reveal display-3 white--text"
+                      style="height: 100%; padding: 10px; text-align: center"
+                    >
+                      <span class="overline">{{i.title}} ⁠— {{i.subtitle}}</span>
+                    </div>
+                  </v-expand-transition>
+                </v-img>
+                
+              </v-card>
+            </v-hover>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
 

@@ -3,64 +3,85 @@
     id="skills"
     style="min-height: 100vh;"
   >
-    <div class="mt-5" style="text-align: center">
+    <div class="mt-5" style="text-align: center"
+      data-aos="zoom-in">
       <span class="skills-title">Skills</span>
     </div>
-    <v-layout 
-      row
-      class="pa-10"
-    >
-      <v-flex 
+    <v-layout row>
+      <v-flex
         xs12
-        sm4
-        md4
-        lg4
-        mt-3
-        pa-5
-        text-center
-        v-for="(i, index) in skills"
-        :key="index">
-        <v-progress-circular
-          :value="i.rate"
-          width="10"
-          size="100"
-          color="blue-grey"
-        >{{i.rate}}</v-progress-circular>
-        <div class="pa-2">
-          <span class="skills-name">
-            {{i.name}}
-          </span>
-        </div>
-        <div style="line-height: 12px">
-          <span class="skills-description">
-            {{i.description}}
-          </span>
-        </div>
+        sm12
+        md8 offset-md2
+        lg8 offset-lg2>
+        <v-layout 
+          row
+          class="pa-10"
+        >
+          <v-flex 
+            xs12
+            sm4
+            md4
+            lg4
+            mt-3
+            pa-5
+            text-center
+            v-for="(i, index) in skills"
+            :key="index"
+            data-aos="zoom-out-right">
+            <v-progress-circular
+              :value="i.rate"
+              width="10"
+              size="100"
+              color="blue-grey"
+            >{{i.rate}}%</v-progress-circular>
+            <div class="pa-2">
+              <span class="skills-name">
+                {{i.name}}
+              </span>
+            </div>
+            <div style="line-height: 12px">
+              <span class="skills-description">
+                {{i.description}}
+              </span>
+            </div>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
-    <div class="mt-5" style="text-align: center">
+    <div class="mt-5" style="text-align: center"
+      data-aos="zoom-in">
       <span class="skills-title">Tools</span>
     </div>
-    <v-layout row
-      justify-center>
+    <v-layout row>
       <v-flex
-        xs4
-        sm4
-        md2
-        lg2
-        mt-3
-        pa-5
-        text-center
-        v-for="(i, index) in tools"
-        :key="index">
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <i :class="i.icon" v-on="on" style="font-size: 80px"></i>
-            </template>
-            <span>{{i.description}}</span>
-          </v-tooltip>
+        xs12
+        sm12
+        md8 offset-md2
+        lg8 offset-lg2>
+        <v-layout row
+          justify-center>
+          <v-flex
+            xs4
+            sm4
+            md2
+            lg2
+            mt-3
+            pa-5
+            text-center
+            data-aos="zoom-out-right"
+            v-for="(i, index) in tools"
+            :key="index">
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on }">
+                  <i :class="i.icon" v-on="on" style="font-size: 80px"></i>
+                </template>
+                <span>{{i.description}}</span>
+              </v-tooltip>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
+    
   </v-container>
 </template>
 

@@ -22,6 +22,7 @@
 				<v-img src='../assets/LOGO.png'
 			  	width="300"
 			  	style="margin: auto"
+					data-aos="fade-left"
 			  ></v-img>
 				<div class="text-center">
 					<v-btn class="ma-1"
@@ -30,6 +31,7 @@
 						v-for="(i, index) in networks"
 						:key="index"
 						:href="i.link"
+						data-aos="fade-right"
 						>
 						<v-icon>{{ i.icon }}</v-icon>
 					</v-btn>
