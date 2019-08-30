@@ -29,9 +29,6 @@
           </div>
           <div class="pt-5 mt-5 pb-5"
             data-aos="zoom-in-left">
-            <blockquote class="blockquote">
-              A queer bibliophile with the weirdest facial expressions.
-            </blockquote>
             <p class="body-1 mt-4">
               Hello there!
               <br /><br />
