@@ -1,0 +1,39 @@
+{
+  "about":
+  {
+    "name": "ミカエラ・デルモンテ",
+    "title": "UI・グラフィックデザイナー ｜ フロントエンド開発者",
+    "greeting": "こんにちは！",
+    "content": "I am a UI Designer, Frontend Developer, and Graphic Designer. I aim to create and provide designs that are visually pleasing and informative at the same time. I am always eager to learn new things from the experiences I accumulate through working with different people and different projects. With my current skills, I will work hard to provide good services while exerting efforts and enjoying what I am doing.",
+    "skills": "スキル",
+    "tools": "ツール",
+    "works": "ポートフォリオ"
+  },
+  "skills": [
+    {
+      "name": "UIデザイン",
+      "rate": 60,
+      "description": "Knowledge and experience in designing user interfaces using wireframing and prototyping tools/softwares.",
+      "color": ""
+    },
+    {
+      "name": "フロントエンド開発",
+      "rate": 60,
+      "description": "Knowledge and experience in frontend development using various frameworks, but mainly PHP and JavaScript frameworks.",
+      "color": ""
+    },
+    {
+      "name": "グラフィックデザイン",
+      "rate": 75,
+      "description": "Knowledge and experience in designing posters, logos, pamphlets, etc. using various editing software of Adobe.",
+      "color": ""
+    }
+  ],
+  "work_modal": {
+    "note": "ノート",
+    "role": "役割",
+    "category": "カテゴリー",
+    "lang": "言語",
+    "tools": "ツール"
+  }
+}

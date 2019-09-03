@@ -1,0 +1,39 @@
+{
+  "about":
+  {
+    "name": "MICAELA DELMONTE",
+    "title": "UI・Graphic Designer | Frontend Developer",
+    "greeting": "Hello there!",
+    "content": "I am a UI Designer, Frontend Developer, and Graphic Designer. I aim to create and provide designs that are visually pleasing and informative at the same time. I am always eager to learn new things from the experiences I accumulate through working with different people and different projects. With my current skills, I will work hard to provide good services while exerting efforts and enjoying what I am doing.",
+    "skills": "Skills",
+    "tools": "Tools",
+    "works": "Portfolio"
+  },
+  "skills": [
+    {
+      "name": "UI Design",
+      "rate": 60,
+      "description": "Knowledge and experience in designing user interfaces using wireframing and prototyping tools/softwares.",
+      "color": ""
+    },
+    {
+      "name": "Frontend Development",
+      "rate": 60,
+      "description": "Knowledge and experience in frontend development using various frameworks, but mainly PHP and JavaScript frameworks.",
+      "color": ""
+    },
+    {
+      "name": "Graphic Design",
+      "rate": 75,
+      "description": "Knowledge and experience in designing posters, logos, pamphlets, etc. using various editing software of Adobe.",
+      "color": ""
+    }
+  ],
+  "work_modal": {
+    "note": "NOTE",
+    "role": "ROLE",
+    "category": "CATEGORY",
+    "lang": "LANGUAGES",
+    "tools": "TOOLS"
+  }
+}

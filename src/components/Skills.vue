@@ -5,7 +5,7 @@
   >
     <div class="mt-5" style="text-align: center"
       data-aos="zoom-in">
-      <span class="skills-title">Skills</span>
+      <span class="skills-title">{{$t('about.skills')}}</span>
     </div>
     <v-layout row>
       <v-flex
@@ -25,7 +25,7 @@
             mt-3
             pa-5
             text-center
-            v-for="(i, index) in skills"
+            v-for="(i, index) in $t('skills')"
             :key="index"
             data-aos="zoom-out-right">
             <v-progress-circular
@@ -50,7 +50,7 @@
     </v-layout>
     <div class="mt-5" style="text-align: center"
       data-aos="zoom-in">
-      <span class="skills-title">Tools</span>
+      <span class="skills-title">{{$t('about.tools')}}</span>
     </div>
     <v-layout row>
       <v-flex

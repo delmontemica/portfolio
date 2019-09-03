@@ -2,7 +2,7 @@
   <v-container id="works" style="min-height: 100vh;">
     <div class="mt-5" style="text-align: center"
       data-aos="zoom-in">
-      <span class="skills-title">Works</span>
+      <span class="skills-title">{{ $t('about.works') }}</span>
     </div>
     <v-layout row>
       <v-flex

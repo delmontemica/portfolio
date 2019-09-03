@@ -31,5 +31,8 @@ export default {
 	data: () => ({
     
   }),
+  beforeMount() {
+    this.$i18n.locale = this.$route.params.lang;
+  },
 };
 </script>

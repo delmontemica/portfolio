@@ -23,16 +23,16 @@
           pa-4>
           <div class="text-center"
             data-aos="zoom-in">
-            <span class="strip-bigtext">MICAELA DELMONTE</span>
+            <span class="strip-bigtext">{{ $t('about.name') }}</span>
             <br />
-            <span class="strip-subtitle">UI・Graphic Designer | Frontend Developer</span>
+            <span class="strip-subtitle">{{ $t('about.title') }}</span>
           </div>
           <div class="pt-5 mt-5 pb-5"
             data-aos="zoom-in-left">
             <p class="body-1 mt-4">
-              Hello there!
+              {{ $t('about.greeting') }}
               <br /><br />
-              I am a UI Designer, Frontend Developer, and Graphic Designer. As an individual with an eye for aesthetics, I aim to create and provide designs that are visually pleasing and informative at the same time. I am always eager to learn new things from the experiences I accumulate through working with different people and different projects. With my current skills, I will work hard to provide good services while exerting efforts and enjoying what I am doing.
+              {{ $t('about.content') }}
             </p>
           </div>
           <div data-aos="zoom-in-left">
@@ -53,6 +53,6 @@
   export default {
     data: () => ({
       
-    }),
+    })
   }
 </script>

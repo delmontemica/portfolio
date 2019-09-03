@@ -43,7 +43,7 @@
               <v-icon>mdi-link-variant</v-icon>
             </v-btn>
             <br />
-            <span class="overline">** NOTE: {{item.note}} </span>
+            <span class="overline">** {{ $t('work_modal.note') }}: {{item.note}} </span>
           </div>
         </v-flex>
         <v-flex 
@@ -64,10 +64,10 @@
           </span>
           <v-divider class="mt-2 mb-2" />
           <span class="caption">
-            <strong>ROLE: </strong> {{item.role}} <br />
-            <strong>CATEGORY: </strong> {{item.category}} <br />
-            <strong>LANGUAGES: </strong> {{item.languages}} <br />
-            <strong>TOOLS: </strong> {{item.tools}} <br />
+            <strong>{{ $t('work_modal.role') }}: </strong> {{item.role}} <br />
+            <strong>{{ $t('work_modal.category') }}: </strong> {{item.category}} <br />
+            <strong>{{ $t('work_modal.lang') }}: </strong> {{item.languages}} <br />
+            <strong>{{ $t('work_modal.tools') }}: </strong> {{item.tools}} <br />
           </span>
         </v-flex>
       </v-layout>

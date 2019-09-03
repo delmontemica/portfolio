@@ -20,7 +20,7 @@ export default new Router({
   },
   routes: [
     {
-      path: '/',
+      path: '/:lang',
       name: 'home',
       component: Home,
       meta: {
