@@ -6,6 +6,30 @@
 	  	fill-height
 			style="height: 100vh; width: 100%"
 	  >
+		<div class="int">
+			<v-menu offset-y>
+				<template v-slot:activator="{ on }">
+					<v-btn
+						text
+						icon
+						class="pa-1 ma-1"
+						v-on="on"
+					>
+						<span class="home-nav">
+							<v-icon>mdi-earth</v-icon>
+						</span>
+					</v-btn>
+				</template>
+				<v-list>
+					<v-list-item
+						v-for="(i, index) in lang"
+						:key="index"
+						:href="i.link">
+						{{ i.lang }}
+					</v-list-item>
+				</v-list>
+			</v-menu>
+			</div>
 			<v-flex xs12>
 				<div class="text-center">
 					<v-btn
@@ -58,6 +82,10 @@ export default {
 			{ name: 'LinkedIn', icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/delmontemica/' },
 			{ name: 'E-Mail', icon: 'mdi-email', link: 'eladelmonte@gmail.com' },
 		],
+		lang: [
+			{ lang: 'English', link: '/' },
+			{ lang: '日本語', link: '/ja' },
+		]
 	}),
 };
 </script>

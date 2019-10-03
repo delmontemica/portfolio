@@ -4,7 +4,7 @@
     "name": "ミカエラ・デルモンテ",
     "title": "UI・グラフィックデザイナー ｜ フロントエンド開発者",
     "greeting": "こんにちは！",
-    "content": "I am a UI Designer, Frontend Developer, and Graphic Designer. I aim to create and provide designs that are visually pleasing and informative at the same time. I am always eager to learn new things from the experiences I accumulate through working with different people and different projects. With my current skills, I will work hard to provide good services while exerting efforts and enjoying what I am doing.",
+    "content": "私はUIデザイナー、フロントエンド開発者、グラフィックデザイナーです。美的と同時に有益なデザインを作成し、提供することを目指しています。 さまざまな人やさまざまなプロジェクトと協力して蓄積した経験から、常に新しいことを学びたいです。現在のスキルを活かして、自分のやっていることを楽しみながら、良いサービスを提供するために一生懸命働きます。",
     "skills": "スキル",
     "tools": "ツール",
     "works": "ポートフォリオ"
@@ -13,19 +13,19 @@
     {
       "name": "UIデザイン",
       "rate": 60,
-      "description": "Knowledge and experience in designing user interfaces using wireframing and prototyping tools/softwares.",
+      "description": "ワイヤーフレーム作るおよびプロトタイピングツールやソフトウェアを使用したユーザーインターフェイスの設計に関するの知識と経験。",
       "color": ""
     },
     {
       "name": "フロントエンド開発",
       "rate": 60,
-      "description": "Knowledge and experience in frontend development using various frameworks, but mainly PHP and JavaScript frameworks.",
+      "description": "さまざまなフレームワークを使用したフロントエンド開発の知識と経験（PHPやJavaScriptフレームワーク）。",
       "color": ""
     },
     {
       "name": "グラフィックデザイン",
       "rate": 75,
-      "description": "Knowledge and experience in designing posters, logos, pamphlets, etc. using various editing software of Adobe.",
+      "description": "Adobeソフトウェアを使用したポスター、ロゴ、パンフレットなどの設計に関するの知識と経験。",
       "color": ""
     }
   ],
@@ -35,5 +35,85 @@
     "category": "カテゴリー",
     "lang": "言語",
     "tools": "ツール"
-  }
+  },
+  "works": [
+    {
+      "image": "~/src/assets/okutara.png",
+      "title": "オクタラ",
+      "subtitle": "ブログやビデオブログを通じて、奥多摩での旅行体験を発信し、海外の人がその旅行を追体験できるインバウンドウェブサイト",
+      "description": "「オクタラ」というプロジェクトはブログやビデオブログを通じて、奥多摩での旅行体験を発信し、海外の人がその旅行を追体験できるインバウンドウェブサイトです。このウェブサイトでは、奥多摩で旅行体験をしたユーザーがビデオブログやヴィログを公開することができます。",
+      "role": "UI・UXデザイナー ・ フロントエンド開発者",
+      "category": "ウェブ開発",
+      "languages": "PHP (Laravel), HTML, CSS (SASS), JavaScript, MySQL",
+      "tools": "Visual Studio Code, InVision, GitKraken",
+      "github": null,
+      "link": null,
+      "note": "Githubリポジトリは非公開です。 プロジェクトが公開されると、リンクが更新されます。"
+    },
+    {
+      "image": "@/assets/babel.png",
+      "title": "Babelメソッド",
+      "subtitle": "Jellyfish Inc.の外国人社員向けの日本のEラーニングシステム",
+      "description": "Babel Methodは、外国人従業員向けに設計された日本語Eラーニングシステムです。 これは、株式会社JELLYFISHで働く外国人向けの社内言語学習システムです。 システムは、フロントエンドにVueJSフレームワークを使用し、バックエンドにNodeJSを使用します。",
+      "role": "フロントエンド開発者",
+      "category": "ウェブ開発",
+      "languages": "HTML, CSS (SASS, JavaScript (VueJS Framework, NodeJS)",
+      "tools": "Visual Studio Code, GitKraken",
+      "github": null,
+      "link": null,
+      "note": "Githubリポジトリは非公開です。 プロジェクトが公開されると、リンクが更新されます。"
+    },
+    {
+      "image": "@/assets/spring.png",
+      "title": "春学期の成果発表会チラシ",
+      "subtitle": "奥多摩日本語学校での「成果発表会」のためのチラシデザイン",
+      "description": "学期の終わりごとに、奥多摩日本語学校はピッチのようなプロジェクトのプレゼンテーションを開催し、学生は自分のプロジェクトを奥多摩町の人々に提示できます。このチラシには、プレゼンの日に発表されたプロジェクトのリストが表示されるため、聴衆はプロジェクトの基本的な詳細を知ることができます。",
+      "role": "グラフィックデザイナー",
+      "category": "グラフィックデザイン",
+      "languages": "なし",
+      "tools": "Adobe Photoshop",
+      "github": null,
+      "link": null,
+      "note": "Githubは使用できません。"
+    },
+    {
+      "image": "@/assets/kodomo.png",
+      "title": "おくたまこども大作戦メンバー募集チラシ",
+      "subtitle": "東京電機大学に向けての「おくたまこども大作戦」というイベントのためのメンバー募集チラシデザイン",
+      "description": "奥多摩日本語学校、明星大学と東京電機大学は「おくたまこども大作戦」というイベントのためをコラボしました。このイベントはこどもワークショップに4日間であるイベントでした。チラシの目標は東京電機大学にメンバー募集します。",
+      "role": "グラフィックデザイナー",
+      "category": "グラフィックデザイン",
+      "languages": "なし",
+      "tools": "Adobe Photoshop",
+      "github": null,
+      "link": null,
+      "note": "Githubは使用できません。"
+    },
+    {
+      "image": "@/assets/dnus.png",
+      "title": "DNUS",
+      "subtitle": "外国人を採用したい企業経営者と人事のためのオンラインサービス",
+      "description": "「DNUS」はDOC Inc.が所有するサービスです。これは、日本で働きたいと思われる外国人のための採用システムです。 このシステムは、Ruby on Rails PHPフレームワークを使用しました。",
+      "role": "フロントエンド開発者",
+      "category": "ウェブ開発",
+      "languages": "PHP (Ruby on Rails), HTML (HAML), CSS (SASS), Javascript/CoffeeScript, MySQL",
+      "tools": "Visual Studio Code, InVision, GitKraken",
+      "github": null,
+      "link": "https://dnus.jp/",
+      "note": "Githubリポジトリは非公開です。"
+    },
+    {
+      "image": "@/assets/rio.png",
+      "title": "オンラインリゾート予約および課金システム",
+      "subtitle": "リゾートのWebベースのオンライン予約および課金システム",
+      "description": "「Rio Villa Nuevo Mineral Water Resort」は、フィリピンにあるリゾートです。 この会社のために作成されたシステムは、ゲストのためのオンライン予約および請求システム、ならびに管理のための予約、支払い、およびレポートの生成の管理で構成されていました。 このシステムは、会社が手動での管理からリゾートデータをより体系化された方法で処理できるようにするために作成されました。 予約および請求モジュールに加えて、このシステムにより、会社はWebサイトに表示されている情報を管理することもできます。",
+      "role": "UIデザイナー ・ フロントエンド開発者 ・ プロジェクトリーダー",
+      "category": "ウェブ開発",
+      "languages": "PHP, CSS, HTML, JavaScript, MySQL",
+      "tools": "Sublime Text, XAMPP",
+      "github": "https://gitlab.com/IrisLipata/riovillanuevo",
+      "link": null,
+      "note": "ドメインの有効期限が切れたため、ウェブサイトのリンクを利用できません。"
+    }
+  ]
 }

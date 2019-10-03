@@ -28,7 +28,7 @@
           pa-5
         >
           <v-img
-            :src="item.image"
+            :src="image"
             width="100%"
           ></v-img>
           <div class="text-center">
@@ -82,6 +82,7 @@ export default {
   props: {
     modal: Boolean,
     item: Object,
+    image: Object,
   },
   data: function() {
     return {}
