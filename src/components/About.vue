@@ -39,8 +39,8 @@
             <v-btn class="ma-2" outlined color="black"
               href="https://drive.google.com/file/d/1qkNiC7vtoSsXAv-p6MINbDjUuSsYNiMT/view?usp=sharing"
             >English CV</v-btn>
-            <v-btn class="ma-2" outlined color="black" disabled>履歴書</v-btn>
-            <v-btn class="ma-2" outlined color="black" disabled>職務経歴書</v-btn>
+            <v-btn class="ma-2" outlined color="black" href="https://drive.google.com/open?id=1S0lzJTSo5um5Kst4Izn4Td2Ja20pyyne">履歴書</v-btn>
+            <v-btn class="ma-2" outlined color="black" href="https://drive.google.com/open?id=1dr0R5rWcpQOWnGwIDmXYmrOX22HclV5g">職務経歴書</v-btn>
           </div>
           
         </v-flex>

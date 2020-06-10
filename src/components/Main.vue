@@ -6,42 +6,28 @@
 	  	fill-height
 			style="height: 100vh; width: 100%"
 	  >
-		<div class="int">
-			<v-menu offset-y>
-				<template v-slot:activator="{ on }">
-					<v-btn
-						text
-						icon
-						class="pa-1 ma-1"
-						v-on="on"
-					>
-						<span class="home-nav">
-							<v-icon>mdi-earth</v-icon>
-						</span>
-					</v-btn>
-				</template>
-				<v-list>
-					<v-list-item
-						v-for="(i, index) in lang"
-						:key="index"
-						:href="i.link">
-						{{ i.lang }}
-					</v-list-item>
-				</v-list>
-			</v-menu>
-			</div>
 			<v-flex xs12>
 				<div class="text-center">
 					<v-btn
 						depressed
 						color="transparent"
 						class="pa-2 ma-3"
-						v-for="(i, index) in links"
+						v-for="(i, index) in $t('menu')"
             :key="index"
-						:to="i.href"
+						:to="i.link"
 					>
-						<span class="home-nav">{{ i.name }}</span>
+						<span class="home-nav font-weight-regular">{{ i.title }}</span>
 					</v-btn>
+					<v-btn
+						depressed
+						color="transparent"
+						class="pa-2 ma-3"
+						v-for="(i, index) in lang"
+						:key="index"
+						:href="i.link"
+					>
+					<span class="home-nav">{{ i.lang }}</span>
+				</v-btn>
 				</div>
 				<v-img src='../assets/LOGO.png'
 			  	width="300"
@@ -65,27 +51,37 @@
 </template>
 
 <script>
+import * as easings from 'vuetify/es5/services/goto/easing-patterns'
 
 export default {
 	data: () => ({
 		result: '',
-    links: [
-      { name: 'About', href: '#about'},
-			{ name: 'Skills', href: '#skills'},
-			{ name: 'Works', href: '#works'},
-		],
 		networks: [
 			{ name: 'Facebook', icon: 'mdi-facebook', link: 'https://www.facebook.com/eladelmonte' },
 			{ name: 'Instagram', icon: 'mdi-instagram', link: 'https://instagram.com/maaycah' },
 			{ name: 'Github', icon: 'mdi-github-circle', link: 'https://github.com/delmontemica' },
 			{ name: 'Behance', icon: 'mdi-behance', link: 'https://www.behance.net/micaela2' },
 			{ name: 'LinkedIn', icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/delmontemica/' },
-			{ name: 'E-Mail', icon: 'mdi-email', link: 'eladelmonte@gmail.com' },
+			{ name: 'E-Mail', icon: 'mdi-email', link: 'mailto:eladelmonte@gmail.com' },
 		],
 		lang: [
-			{ lang: 'English', link: '/' },
-			{ lang: '日本語', link: '/ja' },
+			{ lang: 'EN', link: '/' },
+			{ lang: 'JP', link: '/ja' },
 		]
 	}),
+	computed: {
+		target () {
+      const value = this[this.type]
+      if (!isNaN(value)) return Number(value)
+      else return value
+    },
+    options () {
+      return {
+        duration: this.duration,
+        offset: this.offset,
+        easing: this.easing,
+      }
+    },
+	}
 };
 </script>

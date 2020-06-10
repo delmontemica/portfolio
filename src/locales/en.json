@@ -9,6 +9,20 @@
     "tools": "Tools",
     "works": "Portfolio"
   },
+  "menu":[
+    {
+      "title": "ABOUT",
+      "link": "#about"
+    },
+    {
+      "title": "SKILLS",
+      "link": "#skills"
+    },
+    {
+      "title": "WORK",
+      "link": "#works"
+    }
+  ],
   "skills": [
     {
       "name": "UI Design",
